@@ -81,25 +81,27 @@ namespace arrayslesson2
             //Console.WriteLine(minvalue);
             //Console.WriteLine(nmin);
 
-            int N = int.Parse(Console.ReadLine());
-            int[,] array = new int[N, N];
-            for (int i = 0; i < array.GetLength(0); i++)
-            {
-                for (int ii = 0; ii < array.GetLength(1); ii++)
-                {
-                    
-                    if (i==ii)
-                    {
-                        array[i, ii] = 1;
-                    }
+            //int N = int.Parse(Console.ReadLine());
+            //int[,] array = new int[N, N];
+            //for (int i = 0; i < array.GetLength(0); i++)
+            //{
+            //    for (int ii = 0; ii < array.GetLength(1); ii++)
+            //    {
 
-                    Console.Write($"{array[i, ii]}");
-                }
-                Console.WriteLine();
-            }
+            //        if (i==ii)
+            //        {
+            //            array[i, ii] = 1;
+            //        }
+
+            //        Console.Write($"{array[i, ii]}");
+            //    }
+            //    Console.WriteLine();
+            //}
 
 
-            //List<int> list = new List<int>() { 1,2,10,16,165,1111,0};
+
+
+            //List<int> list = new List<int>() { 1, 2, 10, 16, 165, 1111, 0 };
             //list.Add(2);
 
             //foreach (int item in list)
@@ -107,12 +109,26 @@ namespace arrayslesson2
             //    Console.WriteLine(item);
             //}
             //Random rand = new Random();
-            //var list = new List<int> {rand.Next(2,51)};
+            //var list = new List<int> { rand.Next(2, 51) };
 
             //foreach (var item in list)
             //{
             //    Console.WriteLine(item);
-            //} 
+            //}
+
+            string[] goods = { "Ball", "Car ", "Vata" };
+            int[] prices = { 5, 7, 9 };
+            int M = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < prices.Length; i++)
+            {
+                if (M < prices[i])
+                {
+                    Console.WriteLine(goods[i]);
+                }
+
+            }
+
 
 
 
